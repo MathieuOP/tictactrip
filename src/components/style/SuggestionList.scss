@@ -1,0 +1,34 @@
+.search {
+    
+    &__city {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 10px;
+        border-bottom: 1px solid #bbb;
+        opacity: .6;
+
+        &:last-child {
+            border-bottom: none;
+        }
+
+        &:hover {
+            background-color: #fcfcfd !important;
+            opacity: 1 !important;
+        }
+
+        &--selected {
+            background-color: #fcfcfd;
+            opacity: 1;
+        }
+    }
+
+    &__marker {
+        margin: 0 7px;
+    }
+}
+
+.search__list:hover .search__city--selected {
+    opacity: .6;
+    background-color: #fff;
+}
